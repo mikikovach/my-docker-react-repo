@@ -6,4 +6,6 @@ COPY . .
 RUN npm run build
 
 FROM nginx
+#EBS is going to look at this EXPOSE instruction and use that as the port that gets mapped for incoming traffic.
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html

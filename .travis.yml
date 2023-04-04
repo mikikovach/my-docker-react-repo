@@ -14,3 +14,15 @@ before_install:
 # if it ever gets a return status code other than zero Travis is going to assume that our build failed
 script:
   - docker run -e CI=true mikipriboj/my-docker-react-repo npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-west-3"
+  app: "docker-react"
+  env: "Dockerreact-env"
+  bucket_name: "elasticbeanstalk-eu-west-3-533485266985"
+  bucket_path: "docker-react"
+  on: 
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: "$AWS_SECRET_KEY"  

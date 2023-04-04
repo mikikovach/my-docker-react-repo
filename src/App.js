@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Borba rovovska sa dockerom, promena sa feature brancha!!!
+          Borba rovovska sa dockerom, NEDAMO SE!!!
         </a>
       </header>
     </div>

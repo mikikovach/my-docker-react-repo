@@ -1,0 +1,16 @@
+#anytime we use docker , we super user level permissions to execute this build
+sudo: required
+
+services: 
+  - docker
+
+#commands executed before our tests are run(setup that needs to occur before we start to either deploy our project 
+#or before we start to run our tests)
+before_install:   
+  - docker build -t mikipriboj/my-docker-react-repo -f Dockerfile.dev .
+
+#all the commands that need to be executed to run our tests
+# Travis CI is going to be watching the output of each of these commands, and from each command,
+# if it ever gets a return status code other than zero Travis is going to assume that our build failed
+script:
+  - docker run  

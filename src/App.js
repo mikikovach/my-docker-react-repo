@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Borba rovovska sa dockerom, NEDAMO SE!!!
+          Borba rovovska sa memorijom, izdrzi DELL!!!
         </a>
       </header>
     </div>

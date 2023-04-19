@@ -1,5 +1,6 @@
 #anytime we use docker , we super user level permissions to execute this build
 sudo: required
+language: generic
 
 services: 
   - docker

@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Borba rovovska sa memorijom, izdrzi DELL boy !!!!
+          Borba rovovska sa memorijom, izdrzi DELL boy !
         </a>
       </header>
     </div>
